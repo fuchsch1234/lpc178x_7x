@@ -14,9 +14,9 @@ impl crate::ResetValue for super::CLKSRCSEL {
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum CLKSRC_A {
     #[doc = "0: Selects the Internal RC oscillator as the sysclk and PLL0 clock source (default)."]
-    SELECTS_THE_INTERNAL = 0,
+    INTERNAL_OSCILLATOR = 0,
     #[doc = "1: Selects the main oscillator as the sysclk and PLL0 clock source."]
-    SELECTS_THE_MAIN_OSC = 1,
+    MAIN_OSCILLATOR = 1,
 }
 impl From<CLKSRC_A> for bool {
     #[inline(always)]
@@ -31,19 +31,19 @@ impl CLKSRC_R {
     #[inline(always)]
     pub fn variant(&self) -> CLKSRC_A {
         match self.bits {
-            false => CLKSRC_A::SELECTS_THE_INTERNAL,
-            true => CLKSRC_A::SELECTS_THE_MAIN_OSC,
+            false => CLKSRC_A::INTERNAL_OSCILLATOR,
+            true => CLKSRC_A::MAIN_OSCILLATOR,
         }
     }
-    #[doc = "Checks if the value of the field is `SELECTS_THE_INTERNAL`"]
+    #[doc = "Checks if the value of the field is `INTERNAL_OSCILLATOR`"]
     #[inline(always)]
-    pub fn is_selects_the_internal(&self) -> bool {
-        *self == CLKSRC_A::SELECTS_THE_INTERNAL
+    pub fn is_internal_oscillator(&self) -> bool {
+        *self == CLKSRC_A::INTERNAL_OSCILLATOR
     }
-    #[doc = "Checks if the value of the field is `SELECTS_THE_MAIN_OSC`"]
+    #[doc = "Checks if the value of the field is `MAIN_OSCILLATOR`"]
     #[inline(always)]
-    pub fn is_selects_the_main_osc(&self) -> bool {
-        *self == CLKSRC_A::SELECTS_THE_MAIN_OSC
+    pub fn is_main_oscillator(&self) -> bool {
+        *self == CLKSRC_A::MAIN_OSCILLATOR
     }
 }
 #[doc = "Write proxy for field `CLKSRC`"]
@@ -60,13 +60,13 @@ impl<'a> CLKSRC_W<'a> {
     }
     #[doc = "Selects the Internal RC oscillator as the sysclk and PLL0 clock source (default)."]
     #[inline(always)]
-    pub fn selects_the_internal(self) -> &'a mut W {
-        self.variant(CLKSRC_A::SELECTS_THE_INTERNAL)
+    pub fn internal_oscillator(self) -> &'a mut W {
+        self.variant(CLKSRC_A::INTERNAL_OSCILLATOR)
     }
     #[doc = "Selects the main oscillator as the sysclk and PLL0 clock source."]
     #[inline(always)]
-    pub fn selects_the_main_osc(self) -> &'a mut W {
-        self.variant(CLKSRC_A::SELECTS_THE_MAIN_OSC)
+    pub fn main_oscillator(self) -> &'a mut W {
+        self.variant(CLKSRC_A::MAIN_OSCILLATOR)
     }
     #[doc = r"Sets the field bit"]
     #[inline(always)]
