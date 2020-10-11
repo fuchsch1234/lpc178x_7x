@@ -2,7 +2,15 @@
 pub type R = crate::R<u32, super::P0_26>;
 #[doc = "Writer for register P0_26"]
 pub type W = crate::W<u32, super::P0_26>;
-#[doc = "Selects pin function for pin P0\\[26\\]"]
+#[doc = "Register P0_26 `reset()`'s with value 0x01b0"]
+impl crate::ResetValue for super::P0_26 {
+    type Type = u32;
+    #[inline(always)]
+    fn reset_value() -> Self::Type {
+        0x01b0
+    }
+}
+#[doc = "Selects pin function for pin P0\\[26\\]\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum FUNC_A {
@@ -94,7 +102,7 @@ impl<'a> FUNC_W<'a> {
         self.w
     }
 }
-#[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
+#[doc = "Selects function mode (on-chip pull-up/pull-down resistor control).\n\nValue on reset: 2"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum MODE_A {
@@ -187,7 +195,7 @@ impl<'a> MODE_W<'a> {
         self.w
     }
 }
-#[doc = "Hysteresis."]
+#[doc = "Hysteresis.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum HYS_A {
     #[doc = "0: Disable."]
@@ -262,7 +270,7 @@ impl<'a> HYS_W<'a> {
         self.w
     }
 }
-#[doc = "Invert input"]
+#[doc = "Invert input\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum INV_A {
     #[doc = "0: Input not inverted (HIGH on pin reads as 1, LOW on pin\r\n                                reads as 0)."]
@@ -337,7 +345,7 @@ impl<'a> INV_W<'a> {
         self.w
     }
 }
-#[doc = "Selects Analog/Digital mode."]
+#[doc = "Selects Analog/Digital mode.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum ADMODE_A {
     #[doc = "0: Analog input mode."]
@@ -412,7 +420,7 @@ impl<'a> ADMODE_W<'a> {
         self.w
     }
 }
-#[doc = "Selects 10 ns input glitch filter."]
+#[doc = "Selects 10 ns input glitch filter.\n\nValue on reset: 1"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum FILTR_A {
     #[doc = "0: Filter disabled."]
@@ -487,7 +495,7 @@ impl<'a> FILTR_W<'a> {
         self.w
     }
 }
-#[doc = "Open-drain mode."]
+#[doc = "Open-drain mode.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum OD_A {
     #[doc = "0: Disable."]
@@ -562,7 +570,7 @@ impl<'a> OD_W<'a> {
         self.w
     }
 }
-#[doc = "DAC output enable."]
+#[doc = "DAC output enable.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum DACEN_A {
     #[doc = "0: DAC disable."]

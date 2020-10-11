@@ -2,12 +2,12 @@
 pub type R = crate::R<u32, super::P0_22>;
 #[doc = "Writer for register P0_22"]
 pub type W = crate::W<u32, super::P0_22>;
-#[doc = "Register P0_22 `reset()`'s with value 0x01b0"]
+#[doc = "Register P0_22 `reset()`'s with value 0x30"]
 impl crate::ResetValue for super::P0_22 {
     type Type = u32;
     #[inline(always)]
     fn reset_value() -> Self::Type {
-        0x01b0
+        0x30
     }
 }
 #[doc = "Selects pin function for pin P0\\[22\\]\n\nValue on reset: 0"]
@@ -358,7 +358,7 @@ impl<'a> INV_W<'a> {
         self.w
     }
 }
-#[doc = "Selects Analog/Digital mode.\n\nValue on reset: 1"]
+#[doc = "Selects Analog/Digital mode.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum ADMODE_A {
     #[doc = "0: Analog input mode."]
@@ -433,7 +433,7 @@ impl<'a> ADMODE_W<'a> {
         self.w
     }
 }
-#[doc = "Selects 10 ns input glitch filter.\n\nValue on reset: 1"]
+#[doc = "Selects 10 ns input glitch filter.\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 pub enum FILTR_A {
     #[doc = "0: Filter disabled."]

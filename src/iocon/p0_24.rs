@@ -2,7 +2,15 @@
 pub type R = crate::R<u32, super::P0_24>;
 #[doc = "Writer for register P0_24"]
 pub type W = crate::W<u32, super::P0_24>;
-#[doc = "Selects pin function for pin P0\\[24\\]"]
+#[doc = "Register P0_24 `reset()`'s with value 0x01b0"]
+impl crate::ResetValue for super::P0_24 {
+    type Type = u32;
+    #[inline(always)]
+    fn reset_value() -> Self::Type {
+        0x01b0
+    }
+}
+#[doc = "Selects pin function for pin P0\\[24\\]\n\nValue on reset: 0"]
 #[derive(Clone, Copy, Debug, PartialEq)]
 #[repr(u8)]
 pub enum FUNC_A {

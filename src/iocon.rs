@@ -585,7 +585,7 @@ impl crate::Readable for P0_22 {}
 impl crate::Writable for P0_22 {}
 #[doc = "I/O configuration register for pin P0\\[22\\]"]
 pub mod p0_22;
-#[doc = "I/O configuration register for pin P0\\[23\\]\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [p0_23](p0_23) module"]
+#[doc = "I/O configuration register for pin P0\\[23\\]\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [p0_23](p0_23) module"]
 pub type P0_23 = crate::Reg<u32, _P0_23>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -596,7 +596,7 @@ impl crate::Readable for P0_23 {}
 impl crate::Writable for P0_23 {}
 #[doc = "I/O configuration register for pin P0\\[23\\]"]
 pub mod p0_23;
-#[doc = "I/O configuration register for pin P0\\[24\\]\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [p0_24](p0_24) module"]
+#[doc = "I/O configuration register for pin P0\\[24\\]\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [p0_24](p0_24) module"]
 pub type P0_24 = crate::Reg<u32, _P0_24>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -607,7 +607,7 @@ impl crate::Readable for P0_24 {}
 impl crate::Writable for P0_24 {}
 #[doc = "I/O configuration register for pin P0\\[24\\]"]
 pub mod p0_24;
-#[doc = "I/O configuration register for pin P0\\[25\\]\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [p0_25](p0_25) module"]
+#[doc = "I/O configuration register for pin P0\\[25\\]\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [p0_25](p0_25) module"]
 pub type P0_25 = crate::Reg<u32, _P0_25>;
 #[allow(missing_docs)]
 #[doc(hidden)]
@@ -618,7 +618,7 @@ impl crate::Readable for P0_25 {}
 impl crate::Writable for P0_25 {}
 #[doc = "I/O configuration register for pin P0\\[25\\]"]
 pub mod p0_25;
-#[doc = "I/O configuration register for pin P0\\[26\\]\n\nThis register you can [`read`](crate::generic::Reg::read), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [p0_26](p0_26) module"]
+#[doc = "I/O configuration register for pin P0\\[26\\]\n\nThis register you can [`read`](crate::generic::Reg::read), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero), [`modify`](crate::generic::Reg::modify). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [p0_26](p0_26) module"]
 pub type P0_26 = crate::Reg<u32, _P0_26>;
 #[allow(missing_docs)]
 #[doc(hidden)]
